@@ -15,6 +15,7 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.pushreceiversample.ui.MmsPermission
+import com.example.pushreceiversample.ui.SimStatus
 import com.example.pushreceiversample.ui.theme.PushReceiverSampleTheme
 
 class MainActivity : ComponentActivity() {
@@ -39,6 +40,7 @@ class MainActivity : ComponentActivity() {
                             .padding(16.dp),
                         verticalArrangement = Arrangement.spacedBy(16.dp)
                     ) {
+                        SimStatus()
                         MmsPermission()
                         ReceivedMessage()
                     }
